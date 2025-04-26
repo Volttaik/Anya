@@ -1,16 +1,13 @@
-FROM node:lts-buster
+FROM node:latest
 
 RUN apt-get update && \
-    apt-get install -y ffmpeg webp git && \
+    apt-get install -y ffmpeg webp git python3 python3-pip && \
     apt-get upgrade -y && \
     rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/PikaBotz/Anya_v2-MD anya-v2
-
-WORKDIR /anya-v2
-
-RUN yarn install --production
-
-RUN yarn global add pm2
-
-CMD ["npm", "start"]
+WORKDIR /anya-gen<3
+COPY package*.json ./
+RUN npm install
+COPY requirements.txt ./
+RUN pip3 install -r requirements.txt
+COPY . .
