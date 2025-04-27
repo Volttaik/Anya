@@ -1,0 +1,37 @@
+{
+  "name": "queen anya gen 3",
+  "version": "3.0.0-proto",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "PikaBotz",
+  "license": "MIT",
+  "dependencies": {
+    "@xenova/transformers": "latest",
+    "@napi-rs/canvas": "latest",
+    "@imgly/background-removal-node": "latest",
+    "@queenanya/baileys": "npm:@whiskeysockets/baileys",
+    "express": "latest",
+    "pino": "latest",
+    "@hapi/boom": "latest",
+    "mongoose": "latest",
+    "better-sqlite3": "latest",
+    "mysql2": "latest",
+    "pg": "latest",
+    "file-type": "latest",
+    "chalk": "5.4.1",
+    "sharp": "latest",
+    "node-cache": "latest",
+    "wavefile": "latest",
+    "fluent-ffmpeg": "latest",
+    "node-webpmux": "latest",
+    "gifencoder": "latest",
+    "awesome-phonenumber": "^2.64.0",
+    "@google/generative-ai": "latest",
+    "form-data": "latest",
+    "@mistralai/mistralai": "latest"
+  }
+}
